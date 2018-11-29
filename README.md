@@ -1,6 +1,10 @@
 # swift-learn
 
-## color
+## resource
 ```
+color
 https://flatuicolors.com
+
+icon gen
+https://appicon.co
 ```
