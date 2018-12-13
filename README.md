@@ -1,6 +1,6 @@
 # swift-learn
 
-## resource
+### resource
 ```
 color
 https://flatuicolors.com
@@ -13,6 +13,7 @@ https://www.canva.com
 
 asset
 https://www.appbrewery.co/p/ios12-course-resources/
+```
 
 ### error code checking
 ```
@@ -38,4 +39,8 @@ https://developer.apple.com/library/archive/documentation/General/Reference/Info
   pod setup --verbose
   in project directory /  
   pod init
+  add pod in Podfile file
+  pod install
+  pod update
+
 ```
