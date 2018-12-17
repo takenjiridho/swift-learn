@@ -13,6 +13,16 @@ https://www.canva.com
 
 asset
 https://www.appbrewery.co/p/ios12-course-resources/
+
+jsoneditor
+https://jsoneditoronline.org/
+
+latitude and longitude checking
+https://www.latlong.net
+
+terminal-mac-cheatsheet
+https://github.com/0nn0/terminal-mac-cheatsheet
+
 ```
 
 ### error code checking
