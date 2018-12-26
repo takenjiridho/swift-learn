@@ -7,7 +7,7 @@
 
 import UIKit
 import Firebase
-
+import SVProgressHUD
 
 class LogInViewController: UIViewController {
 
@@ -17,7 +17,8 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        emailTextfield.text = "ridho@ganteng.com"
+        passwordTextfield.text = "123456"
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +28,7 @@ class LogInViewController: UIViewController {
    
     @IBAction func logInPressed(_ sender: AnyObject) {
 
-        
+        SVProgressHUD.show()
         //TODO: Log in the user
         Auth.auth().signIn(withEmail: emailTextfield.text!, password: passwordTextfield.text!)
             {
@@ -36,7 +37,8 @@ class LogInViewController: UIViewController {
                 if error != nil{
                     print(error!)
                 }else{
-                    print("Login Successfull \(user!)")                    
+                    print("Login Successfull \(user!)")
+                    SVProgressHUD.dismiss()
                     self.performSegue(withIdentifier: "goToChat", sender: self)
                 }
             }
